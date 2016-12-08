@@ -25,7 +25,6 @@ while bacteria_population < 5000000:
 print("After " + str(minutes) + " minutes, there are " + str(bacteria_population) + " bacteria in the sink.")
 print("You shoud use some Clorox on the sink now.")
 
-"""
 
 #2
 
@@ -49,4 +48,38 @@ if guess == myNum:
         print("Good job")
 	guesses = guesses + 1
 	print("It took you " + str(guesses) + " guesses.")
+
+"""
+
+print("Welcome To Pumapix")
+print("Enter your favorite TV shows. Type 'Done' when you have finished.")
+
+x = 0
+shows = []
+
+while x < 6:
+	print("Enter a show name.")
+	paper = raw_input()
+	if paper == "done" or paper == "Done": 
+		x = 10
+	else:
+		shows.append(paper)
+	
+print("Ok, this is what you entered: " + str(shows))
+print("We've added a couple important ones.")
+
+
+y = 1
+
+more_shows = ['Breaking Bad', 'The Wire', 'The Walking Dead']
+
+
+all = shows + more_shows
+
+all.sort()
+
+
+for things in all:
+        print(str(y) + ". " + things)
+        y = y + 1
 
