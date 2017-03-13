@@ -90,37 +90,3 @@ while keepRunning:
 				break
 
 		
-"""
-
-#While Loop Starts
-
-keepRunning = True
-
-while keepRunning: 
-
-	print("(1) Add a player.")
-	print("(2) Print all players.")
-	print("(0) Leave the program and delete all players.")
-  	#variable for user input
-  	response = input()
-    	if response == "1":
-		 #options 
-		print("Enter name:")
-		pName = input()
-		print("Enter age:")
-		pAge = input()
-		print("Enter number of goals scored this season")
-		pGoals = input()
-		myPlayer =  Player(pName, pAge, pGoals)
-#added info
-		players.append(myPlayer)
-		print("Ok, player entered.")
-		
-	elif response == "2":
-		for things in players:
-			print(things.getPlayerSummary()) 
-	elif response == "0":
-		break
-    
-
-"""
